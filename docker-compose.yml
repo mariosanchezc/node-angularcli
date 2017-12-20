@@ -6,7 +6,7 @@ services:
       context: ./frontend
     volumes:
       - ./frontend:/frontend
-    working_dir: /frontend/multasapp
-    command: ng serve
+    #working_dir: /frontend/name_project
+    command: ng serve --host 0.0.0.0 --port 4201
     ports:
-     - 4200:4200
+      - "8000:4201"
